@@ -1,0 +1,15 @@
+<div id="wrapper">
+    <h1>Mongo Scraper</h1>
+    <h2><i>Scrape Articles from Reuters</i></h2>
+    <div id="articles">
+        {{#each articles}}
+        <div>
+            <h4><a href="{{this.link}}">{{this.title}}</a></h4>
+            <p data-id={{this.id}}>{{this.summary}}</p>
+        </div>
+        {{/each}}
+    </div>
+    <div id="notes"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="app.js"></script>
